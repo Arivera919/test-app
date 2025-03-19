@@ -1,0 +1,54 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2025-02-27 23:55:25.059495000 Z
+    - 2025-02-27 23:55:25.059495000 Z
+
+---
+users:
+  columns:
+  - id
+  - name
+  - major
+  - graduation_year
+  - user_profile_url
+  - biography
+  - email
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Diana Salha
+    - Major
+    - 2005
+    - "/profilePix/default.jpg"
+    - test
+    - dianasalha123@tamu.edu
+    - 2025-02-27 23:55:51.920942000 Z
+    - 2025-03-08 17:42:01.948394000 Z
+  - - 2
+    - Anish Easerwan
+    - no major
+    - 2000
+    - "/profilePix/default.jpg"
+    - this is a bio
+    - anish.easwaran@tamu.edu
+    - 2025-02-27 23:55:51.941371000 Z
+    - 2025-03-08 18:04:47.378620000 Z
+  - - 3
+    - Fouzul Kansul
+    - no major
+    - 2000
+    - "/profilePix/default.jpg"
+    - wef
+    - fouzul.k@tamu.edu
+    - 2025-02-27 23:55:51.951844000 Z
+    - 2025-03-08 18:05:56.049604000 Z

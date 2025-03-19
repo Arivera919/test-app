@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  host: <%= ENV['DB_HOST'] %> 
+
+development:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %> 
+
+test:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %> 
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %> 
+  pool: 5
+  timeout: 5000
+  sslmode: require

@@ -4,11 +4,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.alias["@babel/preset-env"] =
-        require.resolve("@babel/preset-env");
-    }
+  webpack(config, { isServer }) {
+    config.module.rules.push({
+      test: /\.(js|jsx|ts|tsx)$/,
+      loader: "babel-loader",
+      options: {
+        presets: ["@babel/preset-env", "@babel/preset-react"],
+      },
+    });
+
     return config;
   },
 };

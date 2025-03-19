@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  webpack(config, { isServer }) {
+  /*webpack(config, { isServer }) {
     config.module.rules.push({
       test: /\.(js|jsx|ts|tsx)$/,
       loader: "babel-loader",
@@ -14,7 +14,7 @@ const nextConfig = {
     });
 
     return config;
-  },
+  },*/
 };
 
 module.exports = nextConfig;
